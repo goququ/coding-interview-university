@@ -1,0 +1,33 @@
+{
+  "name": "coding-interview-university",
+  "version": "1.0.0",
+  "description": "Preparation to the FAANG interview",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goququ/coding-interview-university.git"
+  },
+  "keywords": [
+    "FAANG",
+    "Interview",
+    "Data",
+    "structures",
+    "Algorithms"
+  ],
+  "author": "goququ@ya.ru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/goququ/coding-interview-university/issues"
+  },
+  "homepage": "https://github.com/goququ/coding-interview-university#readme",
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.11.6",
+    "jest": "^27.3.1",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.4.4"
+  }
+}
