@@ -36,14 +36,27 @@ class CustomArray<T extends unknown> {
     this.items.push(item);
   }
 
-  public insert(index: number, item: T) {}
-  public prepend(item: T) {}
-  public pop(item: T) {}
-  public delete(index: number) {}
+  public insert(index: number, item: T) {
+    this.items.splice(index, 0, item);
+  }
+
+  public prepend(item: T) {
+    this.items.unshift(item);
+  }
+  public pop() {
+    return this.items.pop();
+  }
+  public delete(index: number) {
+    this.items.splice(index, 1);
+  }
   // ищет элементы по значению и удаляет их, даже если их несколько
-  public remove(item: T) {}
+  public remove(item: T) {
+    this.items = this.items.filter((i) => i !== item);
+  }
   // ищет элемент по значению и возвращает индекс первого найденного элемента, возвращает -1 если ничего не найдено
-  public find(item: T) {}
+  public find(item: T) {
+    return this.items.findIndex((i) => i === item);
+  }
 }
 
 export default CustomArray;
